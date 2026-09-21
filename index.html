@@ -81,10 +81,15 @@
       background: linear-gradient(90deg, var(--red), #ef476f); border-radius: var(--radius) var(--radius) 0 0;
     }
     .avatar {
-      width: 154px; aspect-ratio: 1; display: grid; place-items: center; margin: 0 auto 22px;
-      color: white; background: linear-gradient(145deg, #191f2c, #30394c); border: 8px solid white;
-      border-radius: 50%; box-shadow: 0 15px 30px rgba(17, 24, 39, 0.18);
-      font-size: 3rem; font-weight: 800; letter-spacing: -0.07em;
+    width: 154px;
+    height: 154px;
+    display: block;
+    margin: 0 auto 22px;
+    object-fit: cover;
+    object-position: center 28%;
+    border: 8px solid white;
+    border-radius: 50%;
+    box-shadow: 0 15px 30px rgba(17, 24, 39, 0.18);
     }
     .profile-card h2 { margin: 0; color: var(--navy); font-size: 1.45rem; }
     .profile-card p { margin: 5px 0 0; color: var(--red); font-weight: 750; }
@@ -257,7 +262,7 @@
     <section class="hero" id="top">
       <div class="container hero-grid">
         <aside class="profile-card" aria-label="Profile summary">
-          <div class="avatar" aria-hidden="true">KD</div>
+          <img class="avatar" src="IMG_1828.jpeg" alt="Headshot of Karun Daswani">
           <h2>Karun Daswani</h2>
           <p>Rutgers Business School</p>
           <small>B.S. Finance · May 2027</small>
@@ -272,8 +277,8 @@
           <div class="actions">
             <a class="button primary" href="mailto:karundaswani@yahoo.com">Email Me <span class="arrow" aria-hidden="true">→</span></a>
             <a class="button" href="https://www.linkedin.com/in/karundaswani" target="_blank" rel="noopener noreferrer">LinkedIn Profile <span class="arrow" aria-hidden="true">↗</span></a>
-            <a class="button" href="#projects">View Projects <span class="arrow" aria-hidden="true">↓</span></a>
-          </div>
+            <a class="button" href="Karun_Daswani_Resume.pdf" target="_blank" rel="noopener noreferrer">View Résumé <span class="arrow" aria-hidden="true">↗</span>
+</a>          </div>
         </div>
       </div>
     </section>
